@@ -57,4 +57,23 @@ function operate(operator, num1, num2){
 }
 
 //create the functions that populate the display when you click the number button
-//queryselectors
+//DOM Elements + store display value
+const clearButton = document.querySelector('.clear');
+const equalButton = document.querySelector('.equal');
+let output = document.querySelector('.output');
+const numberKeys = document.querySelector('.number');
+const operatorKeys = document.querySelector('.operator');
+
+//need to store the display valuable as a variable
+let displayValue = '', operation = '', number1 = 0, number2 = 0, operator = '';
+let isOperatorPressed = false;
+let result = 0;
+
+//set initial values
+function initial() {
+    number1 = 0;
+    number2 = 0;
+    displayValue = '';
+    result = 0;
+    output.innerHTML = result;
+}
