@@ -50,5 +50,11 @@ function operate(operator, num1, num2){
         case 'divideNumbers':
             return divideNumbers(num1, num2);
             break;
+        case 'multiplyNumbers':
+            return multiplyNumbers(num1, num2);
+            break;
     }
 }
+
+//create the functions that populate the display when you click the number button
+//queryselectors
